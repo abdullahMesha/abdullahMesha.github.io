@@ -18,7 +18,7 @@ const projects = [
                 <li>Built interactive network map visualization for site monitoring</li>
             </ul>`,
         tech: ['ASP.NET Core', 'C#', 'MySQL', 'Angular', 'JavaScript', 'Docker'],
-        images: ['assets/img/usmartops-alarms.png', 'assets/img/usmartops-map.png'],
+        images: [ 'assets/img/usmartops-map.png', 'assets/img/usmartops-alarms.png'],
         gradient: 'linear-gradient(135deg, #2563eb, #7c3aed)',
         icon: 'M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z' // book
     },
@@ -36,7 +36,7 @@ const projects = [
                 <li>Site management tools including RF data entry, equipment tracking, and comparison utilities</li>
             </ul>`,
         tech: ['.NET', 'C#', 'MySQL', 'Web UI'],
-        images: ['assets/img/ran-helpdesk.png', 'assets/img/ran-helpdesk-compare.png'],
+        images: [ 'assets/img/ran-helpdesk-compare.png','assets/img/ran-helpdesk.png],
         gradient: 'linear-gradient(135deg, #dc2626, #9333ea)',
         icon: 'M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'
     },
