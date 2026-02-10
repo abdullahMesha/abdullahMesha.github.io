@@ -466,41 +466,37 @@ ul, ol { list-style: none; }
     opacity: 0.12;
 }
 
-/* Scroll indicator */
+/* Scroll indicator — hidden on mobile, visible on desktop */
 .hero-scroll {
-    position: absolute;
-    bottom: 32px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
+    display: none;
 }
 
-.hero-scroll a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    color: var(--accent);
-    animation: bounce-down 2.2s infinite;
-    text-decoration: none;
-}
+@media (min-width: 769px) {
+    .hero-scroll {
+        display: block;
+        position: absolute;
+        bottom: 32px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
 
-.hero-scroll-label {
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-}
+    .hero-scroll a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: var(--radius-full);
+        color: var(--accent);
+        border: 2px solid var(--accent);
+        animation: bounce-down 2.2s infinite;
+    }
 
-.hero-scroll svg {
-    width: 28px;
-    height: 28px;
-    stroke-width: 2.5;
-}
-
-@keyframes bounce-down {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(8px); }
+    @keyframes bounce-down {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(8px); }
+    }
 }
 
 /* =========================================================
