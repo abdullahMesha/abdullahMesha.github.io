@@ -36,7 +36,7 @@ const projects = [
                 <li>Site management tools including RF data entry, equipment tracking, and comparison utilities</li>
             </ul>`,
         tech: ['.NET', 'C#', 'MySQL', 'Web UI'],
-        images: [ 'assets/img/ran-helpdesk-compare.png','assets/img/ran-helpdesk.png],
+        images: [ 'assets/img/ran-helpdesk-compare.png','assets/img/ran-helpdesk.png'],
         gradient: 'linear-gradient(135deg, #dc2626, #9333ea)',
         icon: 'M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'
     },
