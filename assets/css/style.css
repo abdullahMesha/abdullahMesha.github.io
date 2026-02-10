@@ -477,19 +477,30 @@ ul, ol { list-style: none; }
 
 .hero-scroll a {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: var(--radius-full);
-    color: var(--text-tertiary);
-    border: 1px solid var(--border);
-    animation: bounce-down 2s infinite;
+    gap: 6px;
+    color: var(--accent);
+    animation: bounce-down 2.2s infinite;
+    text-decoration: none;
+}
+
+.hero-scroll-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.hero-scroll svg {
+    width: 28px;
+    height: 28px;
+    stroke-width: 2.5;
 }
 
 @keyframes bounce-down {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(6px); }
+    50% { transform: translateY(8px); }
 }
 
 /* =========================================================
